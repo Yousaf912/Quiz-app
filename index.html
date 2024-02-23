@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container mt-5" id="mainDiv">
+        <div class="row">
+            <div class="col-md-12 bg-success-subtle pt-3 d-flex justify-content-between">
+                <h3>Quiz App</h3>
+                <h3>
+                    <span id="questionCount">0</span> /
+                    <span id="totalQuesN">10</span>
+                </h3>
+            </div>
+            <div class="col-md-12 bg-dark-subtle pt-3 mt-4 pt-5">
+                <h3 id="questionDisplay"></h3>
+            </div>
+            <div class="row mt-5 mx-auto" id="optionDisplay"></div>
+        </div>
+        <button class="bg-success mx-auto mt-2 p-2 border rounded-2" onclick="nextQuestion()">Next</button>
+    </div>
+    
+<div class="result " id="resultDisplay" ></div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
